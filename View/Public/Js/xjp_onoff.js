@@ -1,12 +1,44 @@
-var $lang={
-errAlertMsg: "时间不能小于当前时间,请重新选择",
-aWeekStr: ["周","日","一","二","三","四","五","六"],
-aMonStr: ["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一","十二"],
-clearStr: "清空",
-todayStr: "今天",
-okStr: "确定",
-updateStr: "确定",
-timeStr: "时间",
-quickStr: "快速选择", 
-err_1: '最小日期不能大于最大日期!'
-}
+ $(document).ready(function() {
+        	// $(".more-icon").click(function(event) {
+        	// 	 Act on the event 
+        	// 	$(this).addClass('down-icon')
+        		
+        	// });  
+        	// addClass("down-icon")
+                // $("div.left-box>div.s-list-box >.table-list >tbody >tr:odd> td> a.more-icon").click(function(event) {
+                // //          Act on the event 
+                //          // $(this).attr("classtest-icon')
+                //          $(this).attr({
+                //                  class : 'more-icon down-icon',
+                //          });
+             
+                //  });
+
+                $(".more-icon").click(function(event) {
+                //          Act on the event 
+                         // $(this).attr("classtest-icon')
+                         $(this).attr({
+                                 class : 'more-icon down-icon',
+                                 id:'test_id'
+                         });
+                         // $(#J-list-box > tr:nth-child(2)).attr({
+                         //         style: 'display: table-row',
+                         //         // property2: 'value2'
+                         // });
+             
+                 });
+
+
+                // $("#test_id").click(function(event) {
+                // //          Act on the event 
+                //          // $(this).attr("classtest-icon')
+                //          $(this).attr({
+                //                  class : 'more-icon',
+                //                  // property2: 'value2'
+                //                  id:'test_id2'
+                //          });
+             
+                //  });
+                
+        	
+        });
