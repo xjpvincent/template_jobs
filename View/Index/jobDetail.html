@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://job.alibaba.com/zhaopin/position_detail.htm?positionId=15360 -->
+<html xmlns:wb="http://open.weibo.com/wb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+				<meta charset="utf-8">
+		<title>  宣讲会详情  </title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://i.alipayobjects.com/i/localhost/ico/201404/2WPSMmbEyj.ico">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/pob-box.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/comment.css">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/datepicker.css">
+		<script type="text/javascript" async="" charset="utf-8" src="./职位详情 - 阿里巴巴集团招聘_files/core.php"></script><script type="text/javascript" src="__PUBLIC__/Js/wdatepicker.js"></script><link href="__PUBLIC__/Css/WdatePicker.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="__PUBLIC__/Js/sea.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/Js/config.js"></script>
+        <script src="__PUBLIC__/Js/wb.js" type="text/javascript" charset="utf-8"></script>
+<script charset="UTF-8" src="__PUBLIC__/Js/bundle.js"></script><link rel="stylesheet" type="text/css" href="chrome-extension://emajkockhmibmpnkbohiipfidkifdjhp/style.css" media="screen"><script charset="UTF-8" src="__PUBLIC__/Js/iframeWidget.js"></script></head>
+<body youdao="bind"><iframe style="display: none;" id="sina_anywhere_iframe"></iframe>
+	<!-- head:S -->
+	<div class="head">
+		<div class="head-main">
+			<div class="head-menu">
+				<div class="login">
+					欢迎来到我找宣讲会！
+					<span id="J-login"><a href="#">登录</a> 
+							| <a href="#">注册</a>
+					</span>   
+				</div>
+				<ul class="lavalamp" id="menu">
+					<li><a href="{:U(index)}">首 &nbsp;&nbsp;页</a></li>
+					<li><a href="{:U(index)}">公 &nbsp;&nbsp;司</a></li>
+					<li><a href="{:U(index)}">论 &nbsp;&nbsp;坛</a></li>
+					<li><a href="{:U(index)}">联系我们</a></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<div class="banner">
+
+</div>
+	<div class="main-box layout">
+	<div class="right-box pt-10">
+		<div class="right-list-box">
+			<h2><span>最新宣讲会</span></h2>
+			<ul>
+			<foreach name="alljobs" item="v">
+						<li><span>4分钟前</span><a title="{$v.name}" href="
+{:U(jobDetail,'','')}/id/{$v.id}">{$v.name}</a></li></foreach>
+			</ul>
+		</div>
+		<div class="right-list-box mt-20">
+			<h2><span>热门收藏</span></h2>
+			<ul>
+			<foreach name="alljobs" item="v">
+						<li><span>4分钟前</span><a title="{$v.name}" href="
+{:U(jobDetail,'','')}/id/{$v.id}">{$v.name}</a></li></foreach>
+			</ul>
+		</div>
+	</div>
+        <br/>
+	<div class="left-box pt-15">
+		<div class="lf-border-box">
+            <center><h3 class="bg-title">{$job.name}  <span>     <img src="__PUBLIC__/Images/new-icon.png"> </span></h3></center>
+			<div class="detail-box">
+				<table class="detail-table box-border">
+					<tbody><tr>
+						<td width="15%" class="text-right">发布时间：</td>
+						<td width="15%">{$job.date}</td>
+						<td width="15%" class="text-right">宣讲会地点：</td>
+						<td width="25%">{$job.city} {$job.university} {$job.address}</td>
+						<td width="15%" class="text-right">行业类别：</td>
+						<td width="15%" class="text-right">计算机</td>
+					</tr>
+				</tbody></table>
+				
+                <p></p><br/>
+				<p class="detail-content">
+
+				{$job.discription}
+				</p>
+				<p>&nbsp;</p>
+				<p class="detail-content">
+				  
+								</p>
+				<div class="li-action-box">
+					<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_tqq"></a>
+<a class="jiathis_button_weixin"></a>
+<a class="jiathis_button_renren"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+	hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+				</div>
+							</div>
+		</div>
+		<h2 class="left-title pl-10 pt-15">推荐宣讲会</h2>
+		<div>
+			<table class="table-list detail-table">
+				<thead>
+					<tr>
+						<th width="30%"><span>宣讲会名称</span></th>
+						<th><span>行业类别</span></th>
+						<th><span>宣讲会地点</span></th>
+						<th width="20%"><span>更新时间</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					
+					<foreach name='alljobs' item='v'>
+					<tr>
+		<td>
+		   <span>
+		       <a target="" href="{:U(jobDetail,'','')}/id/{$v.id}">
+		          {$v.name}
+		       </a>
+		       
+		            <img src="__PUBLIC__/Images/new-icon.png">
+		          
+		          
+		    </span>
+		 </td>
+		<td><span>人力资源类</span></td>
+		<td><span>{$v.city}</span></td>
+		<td><span>{$v.date}</span></td>
+										</tr></foreach>			 							
+													 							
+													                                   									</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" language="javaScript">
+	var  isLogin ;
+			isLogin = false;
+		var  posid = 15360;
+	var register  =     "https://passport.alipay.com/login.htm?appName=hrjob" ;  	var redirectUrl = "http://job.alibaba.com/zhaopin/position_detail.htm?positionId=15360" ;
+	redirectUrl= 	encodeURIComponent(redirectUrl) ;
+    seajs.use("app/position.detail");
+	seajs.use("app/login.mesg");
+</script>
+
+	<div class="footer mg-t20 align-c" id="footer">
+		<div class="friend">
+			<ul class="inline">
+				
+			</ul>
+		</div>
+		<div class="statement">
+			<ul class="inline">
+				<li>©2014 Thursday Night 版权所有</li>
+				<li class="weibo-box">
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--[if IE 6]><script src="/assets/zhaopin/js/lib/png-min.js" type="text/javascript"></script><script type="text/javascript">(function(){DD_belatedPNG.fix(".logo,.more-icon,.resume-info h2 .show-more,.info-gray-bar");})();</script>
+	<![endif]-->
