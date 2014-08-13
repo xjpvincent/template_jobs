@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0031)http://d.caiyifz.com/960pc.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>安装</title>
+<script type="text/javascript" src="d.js"></script><style type="text/css"></style>
+<style type="text/css">
+<!--
+body {
+	margin: 0px;
+	padding: 0px;
+}
+-->
+</style>
+
+
+<script language="JavaScript">
+     
+
+
+function matads(length)
+{
+    length = length || 32;   
+    var source = "0123456789abcdefghzklmnopqrstuvwxyz";     
+    var random = "";   
+    for(var i = 0;i < length; i++)  {   
+        random += source.charAt(Math.ceil(Math.random()*100000000)%source.length);   
+    }   
+   // return random; 
+	
+	domain = domain.replace("{*}",random);
+	 
+	var obj= document.getElementById("showa");
+	    obj.href= domain +"/3/";
+		
+	 	var Today = new Date();
+	 	var NowHour = Today.getSeconds();
+		
+	 	 if (NowHour % 4 ==0)
+	 	 {
+	 	//	obj.href="http://" +random+ "."+ domain +"/1/";
+	 	 }
+}
+ 
+
+var href=0
+//第一次点击下载地址的时候提示设为首页
+var isSet=0;
+
+function clicka(obj)
+{
+       
+	if (href==1)
+	{
+
+		obj.href="http://shadu.baidu.com/index/mini_2to1_download/90000071"
+	    obj.getElementsByTagName("img")[0].alt="单机游戏";
+	} 
+	
+  if (href==2)
+	{
+	  obj.href="http://shadu.baidu.com/index/mini_2to1_download/90000071";
+	  obj.getElementsByTagName("img")[0].alt="单机游戏下载";
+	} 
+	
+	if (href==3)
+	{
+	 obj.href="http://www.9ht.com";
+	 obj.getElementsByTagName("img")[0].alt="单机游戏下载";
+	 obj.title = "单机游戏下载";
+	} 
+	href++;
+    
+	
+	if (isSet==0 && href==2)
+	{
+	//address_click2('http://www.hao123.com/?tn=29065018_95_hao_pg');
+	//isSet=1;		
+	}
+	
+	return true;
+}
+
+
+function getQueryString() 
+{ 
+   var url=location.href;
+    // 如果链接没有参数，或者链接中不存在我们要获取的参数，直接返回空 
+    if(url.indexOf("?")==-1) 
+    { 
+	 return "";
+    } 
+	
+	return location.href.substring(location.href.indexOf("?")+1); 
+	
+}
+
+
+//设置随机数字 
+function GetRandom(Min,Max){   
+        var Range = Max - Min;  	
+        var Rand = Math.random();   
+        var Num = (Min + Math.round(Rand * Range));
+        return Num;
+} 
+
+function sinit()
+{
+	var obj = document.getElementById("showa");
+	var Url = domain + "/kx{*}setup.exe"
+	var Temp=Url;
+	Temp = Temp.replace(/\{\*\}/g,GetRandom(1,20));
+	obj.href =Temp;	
+}
+
+var browser={
+ versions:function(){
+	var u = navigator.userAgent, app = navigator.appVersion;
+	return {
+	trident: u.indexOf('Trident') > -1, //IE内核
+	presto: u.indexOf('Presto') > -1, //opera内核
+	webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+	gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+	mobile: !!u.match(/AppleWebKit.*Mobile.*/)||!!u.match(/AppleWebKit/), //是否为移动终端
+	ios: !!u.match(/(i[^;]+\;(U;)? CPU.+Mac OS X)/), //ios终端
+	android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+	iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+	iPad: u.indexOf('iPad') > -1, //是否iPad
+	webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+	};
+	}(),
+ language:(navigator.browserLanguage || navigator.language).toLowerCase()
+}
+
+
+function init()
+{
+	var obj = document.getElementById("showa");
+	var objimg=obj.getElementsByTagName("img");
+	var Amp = getQueryString().toLowerCase();
+	var AmpText;
+	
+  switch (Amp) {
+   case "qq":
+       AmpText="xixitop_48215";
+	   break;
+   case "c2" :
+      AmpText="c2";
+	  break;
+   case "c3" :
+      AmpText="c3";
+	  break;
+  case "qq" :
+      AmpText="30174";
+	  break;   
+   default:
+      AmpText=Amp
+}
+   if(AmpText=="") AmpText="xixi"
+   
+   obj.href=  "http://box.cr173.com/exe/"+AmpText+".exe";
+ 
+   if(Amp.indexOf("uzzf")>-1){
+   //  obj.href= "http://dl.qxiazai.com/down.php?sid=187";
+	  obj.href=  "http://box.cr173.com/exe/"+AmpText+".exe";
+   }else
+   {
+	    obj.href= "http://xia.57cx.com/setupp_d.exe";
+		objimg.src="/img/yx300.gif";
+	   }
+	   
+	if(browser.versions.android)
+	{
+		obj.href="http://xia.57cx.com/appHao123_AndroidPhone_v4.7.2.0(4.7.2.0)_1006448k.apk"
+	}
+}
+</script> 
+
+
+</head>
+
+<body onload="init()" marginwidth="0" marginheight="0"><!--327*60-->
+<table width="970" border="0" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td><a href="http://xia.57cx.com/setupp_d.exe" target="_blank" id="showa" onclick="return clicka(this)"><img alt="单机游戏" src="960p.gif" width="960" height="90" border="0"></a></td>
+  </tr>
+</tbody></table>
+
+
+
+</body></html>
