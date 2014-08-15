@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+
+* {margin:0; padding:0}
+body {margin:0; padding:0; height:100%; font-size:12px; line-height:20px; color:#757575}
+div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td,button,textarea,select {margin:0; padding:0}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {display:block}
+h1,h2,h3,h4,h5,h6{font-weight:normal; font-size:100%}
+ul,ol,dl,dt,dd,li{list-style:none}
+fieldset,img {border:0; vertical-align:middle}
+address,em {font-style:normal}
+hr {display:none}
+table {border-collapse:collapse; width:100%}
+a {color:#666; text-decoration:none}
+a:hover,a:focus {text-decoration:none}
+caption,legend {visibility: hidden; width: 0; height: 0; font-size:0; line-height:0}
+input,textarea,select {border:1px solid #d6d6d6; vertical-align:top; font-size:12px; color:#666}
+button {cursor:pointer}
+.hidden {visibility: hidden; width: 0; height: 0; font-size:0; line-height:0}
+
+#skip {width:100%; height:0; top:0; left:0}
+#skip a {display:block; position:absolute; top:0; text-indent:-9999px; overflow:hidden}
+#skip a:focus, #skip a:active {display:block; position:absolute; z-index:11; top:0px; left:0; width:100%; height:14px; padding:8px 0px; text-align:center; font-weight:bolder; line-height:14px;  color:#fff; font-size:14px; text-indent:0px; background:#222}
+
+body {font-family:Verdana, Arial Unicode MS, Arial}
